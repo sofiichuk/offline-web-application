@@ -5,11 +5,15 @@
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "gulp serve"
+    "serve": "gulp serve",
+    "preinstall": "npx npm-force-resolutions"
   },
   "author": "",
   "license": "ISC",
   "private": true,
+  "resolutions": {
+    "graceful-fs": "^4.2.10"
+  },
   "devDependencies": {
     "babel-eslint": "^8.0.2",
     "babelify": "^6.2.0",
